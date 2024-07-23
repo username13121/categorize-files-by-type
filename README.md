@@ -7,8 +7,8 @@ the values are lists of full paths to the files with those extensions.
 
 Clone the repository:
 ```commandline
-git clone
-cd repository
+git clone https://github.com/username13121/categorize-files-by-type.git
+cd categorize-files-by-type
 ```
 
 ## Tests
