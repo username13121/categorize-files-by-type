@@ -4,8 +4,11 @@ from datetime import datetime
 import logging
 from collections import defaultdict
 
-logging.basicConfig(level=logging.DEBUG, filename='categorize_files_by_type.log', filemode='w',
-                    format='%(asctime)s %(levelname)s: %(message)s', encoding='utf-8')
+logging.basicConfig(level=logging.DEBUG,
+                    filename='categorize_files_by_type.log',
+                    filemode='w',
+                    format='%(asctime)s %(levelname)s: %(message)s',
+                    encoding='utf-8')
 
 
 def categorize_files_by_type(
@@ -77,3 +80,8 @@ def categorize_files_by_type(
 
     # Covert to standard dictionary
     return dict(files_dict)
+
+
+# Scans current directory by default
+if __name__ == '__main__':
+    print(categorize_files_by_type('./'))
